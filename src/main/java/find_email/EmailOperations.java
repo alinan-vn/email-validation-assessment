@@ -59,10 +59,10 @@ public class EmailOperations {
 			return "Print Complete!";
 		} else if (action.equals("Search")) {
 			
-			System.out.println("Please provide an email to search for:");
+			System.out.println("Please provide an email id to search for:");
 			Scanner emailScan = new Scanner(System.in);
 			String emailInput = emailScan.nextLine();
-			
+			emailInput += "@company.com";
 			System.out.println("Searching...");
 			
 			boolean matchStatus = this.findEmail(emailInput);
